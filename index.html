@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="eBgrJQXQL3YhFjcj2zEpN_7D73k__0YOUH08Gr8GFKo" />
+    <meta name="yandex-verification" content="7846a391024c7b4c" />
+    <meta name="p:domain_verify" content="9860a38a9372255f0191510249146c12"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Ganesh Bagaria">
+    <title>Ganesh Bagaria</title>
+    <link rel="icon" href="./favicon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navigation-bar" id="nav-bar">
+                <a href="https://ganofins.com/">
+                    <img src="./logo.png" height="40px" width="40px" class="logo">
+                </a>
+                <div class="right-navigation-bar" id="right-nav-bar">
+                    <a href="./blog">Blog</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#books">My Books</a>
+                    <a href="./about.html">About me</a></ul>
+                    <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="main">
+            <h3>Hi! My name is Ganesh Bagaria;</h3>
+            <img src="./ganofins.jpg" alt="" class="main-image">
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <article>
+                <h3>RFID Based Billing System</h3>
+                <p>We created a RFID based bill generation system to reduce the billing time in the malls. We built it using a Arduino, RFID Scanner, couple of RFID Tags and with couple cups of coffee. We created a GUI using Java and connected it with Arduino using a library, which fetched the data from the RFID tags using RFID Scanner to our GUI. It was effective and can reduce upto 34% time during bill generation.</p>
+            </article>
+            <article>
+                <h3>Transodio</h3>
+                <p>Transodio is a Python based GUI application which provides quick and automated way to translate a video's audio in their native language. It is built using Python and Amazon Web Services.</p>
+            </article>
+        </section>
+        <section id="books">
+            <h2>My Books</h2>
+            <article>
+                <img src="" alt="">
+                <h3>MySQL for Beginners</h3>
+                <p></p>
+            </article>
+            <article>
+                <img src="" alt="">
+                <h3>HTML for Beginners</h3>
+                <p></p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+
+        </div>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75254835-13"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-75254835-13');
+    </script>
+    <script>
+        function responsiveNav()
+        {
+            var navigation_bar = document.getElementById("nav-bar");
+            var right_navigation_bar = document.getElementById("right-nav-bar");
+            if (navigation_bar.className === "navigation-bar")
+            {
+                navigation_bar.className += " responsive";
+                right_navigation_bar.className += " responsive";
+            }
+            else
+            {
+                navigation_bar.className = "navigation-bar";
+                right_navigation_bar.className = "right-navigation-bar";
+            }
+        }
+    </script>
+</body>
+</html>
